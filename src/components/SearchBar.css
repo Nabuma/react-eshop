@@ -1,0 +1,87 @@
+.search-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: rgb(0 0 0 / 55%);
+  animation: search-fade-in 0.15s ease-out;
+}
+
+.search-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 50rem;
+
+  .input {
+    flex: 1;
+    min-width: 0;
+    outline: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  .submit {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 0.8rem);
+  right: 0;
+  left: 0;
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  color: #111;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 30%);
+}
+
+.search-suggestions-title {
+  margin-bottom: var(--space-2);
+  font-size: 1.2rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.search-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.search-tag {
+  padding: 0.4rem 1.2rem;
+  font-size: 1.4rem;
+  color: #111;
+  cursor: pointer;
+  background: #f1f1f1;
+  border: 0;
+  border-radius: 999px;
+  transition: background 0.15s;
+
+  &:hover,
+  &:focus-visible {
+    color: #fff;
+    background: #111;
+  }
+}
+
+@keyframes search-fade-in {
+  from {
+    opacity: 0;
+  }
+}

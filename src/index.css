@@ -1,0 +1,27 @@
+@import url("./reset.css");
+
+:root {
+  --space: 0.4rem;
+  --space-1: var(--space);
+  --space-2: calc(var(--space) * 2);
+  --space-3: calc(var(--space) * 3);
+  --space-4: calc(var(--space) * 4);
+  --space-6: calc(var(--space) * 6);
+  --space-8: calc(var(--space) * 8);
+  --text-size: 1.6rem;
+  --text-size-1: var(--text-size);
+  --text-size-2: calc(var(--text-size) * 2);
+  --text-size-3: calc(var(--text-size) * 3);
+  --text-size-4: calc(var(--text-size) * 4);
+  --text-size-8: calc(var(--text-size) * 8);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: clip;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+}
